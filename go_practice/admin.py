@@ -1,3 +1,9 @@
 from django.contrib import admin
+from go_practice.models import Exercise
 
-# Register your models here.
+
+class ExerciseAdmin(admin.ModelAdmin):
+    pass
+
+
+admin.site.register(Exercise, ExerciseAdmin)
